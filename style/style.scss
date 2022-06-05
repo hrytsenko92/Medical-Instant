@@ -1,0 +1,21 @@
+html {
+  height: 100vh;
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 818px;
+  background-image: url("../img/header-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .header__nav {
+    min-height: 91px;
+    align-items: center;
+  }
+}
