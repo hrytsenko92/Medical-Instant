@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 :root {
-  --background-blue: #26335d; }
+  --background-blue: #26335d;
+  --primary-background: #ff6551;
+  --base-white: #ffffff; }
 
 body {
   box-sizing: border-box;
@@ -41,6 +43,42 @@ body {
 .advice {
   height: 818px;
   background-color: var(--background-blue); }
+  .advice .advice__title {
+    height: 40%; }
+    .advice .advice__title .advice__title__h3 {
+      font-size: 16px;
+      color: var(--primary-background); }
+    .advice .advice__title .advice__title__h2 {
+      font-size: 40px;
+      color: var(--base-white); }
+    .advice .advice__title .advice__title__p {
+      font-size: 14px;
+      color: var(--base-white); }
+  .advice .advice__cards__wrap {
+    height: 60%; }
+    .advice .advice__cards__wrap .advice__card__item {
+      aspect-ratio: 1/1.5;
+      border-radius: 3px;
+      background-color: var(--base-white); }
+      .advice .advice__cards__wrap .advice__card__item img {
+        width: 70px;
+        height: 76px;
+        border-radius: 10px; }
+      .advice .advice__cards__wrap .advice__card__item .advice__card__item__h5 {
+        font-size: 16px;
+        font-weight: 700; }
+      .advice .advice__cards__wrap .advice__card__item .advice__card__item__hr {
+        width: 35%;
+        height: 1px;
+        border: 1px solid red; }
+    .advice .advice__cards__wrap .advice__card__item_mt10 {
+      margin-top: 50px; }
+    .advice .advice__cards__wrap .advice__card__item_mb10 {
+      margin-bottom: 50px; }
+    .advice .advice__cards__wrap .advice__card__item_colored {
+      background-color: var(--primary-background); }
+      .advice .advice__cards__wrap .advice__card__item_colored .advice__card__item__hr {
+        border: 1px solid var(--base-white); }
 
 @media screen and (max-width: 768px) {
   .header .header__title .header__title_col {
