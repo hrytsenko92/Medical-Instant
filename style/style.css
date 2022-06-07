@@ -1,190 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-:root {
-  --background-blue: #26335d;
-  --primary-background: #ff6551;
-  --base-white: #ffffff; }
+/*
+Error: Invalid CSS after "...  .card__item_1": expected "{", was "}"
+        on line 237 of /Users/mykola_hrytsenko/Desktop/study/Medical-Instant/style/style.scss
 
-body {
-  box-sizing: border-box;
-  max-width: 1440px;
-  margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
+232:             grid-row: 6/7;
+233:           }
+234:         }
+235:       }
+236:       .card__item_1
+237:     }
+238:   }
+239: }
+240: 
+241: @media screen and (max-width: 768px) {
+242:   .header .header__title .header__title_col {
 
-header {
-  height: 818px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header-background.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-  header .header__navbar {
-    height: 15%; }
-    header .header__navbar .navbar-toggler:focus {
-      box-shadow: none; }
-    header .header__navbar .navbar-nav {
-      text-align: right; }
-      header .header__navbar .navbar-nav .btn-primary,
-      header .header__navbar .navbar-nav .btn-primary:hover,
-      header .header__navbar .navbar-nav .btn-primary:active,
-      header .header__navbar .navbar-nav .btn-primary:visited {
-        background-color: var(--primary-background) !important;
-        border-color: var(--primary-background); }
-    header .header__navbar span.navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-    header .header__navbar button.navbar-toggler {
-      border: 1px solid white; }
-  header .header__title {
-    height: 85%; }
-    header .header__title .header__title_col .btn-primary,
-    header .header__title .header__title_col .btn-primary:hover,
-    header .header__title .header__title_col .btn-primary:active,
-    header .header__title .header__title_col .btn-primary:visited {
-      background-color: var(--primary-background) !important;
-      border-color: var(--primary-background); }
-    header .header__title .header__title_col .header_h3 {
-      font-size: 16px;
-      color: var(--primary-background); }
-    header .header__title .header__title_col .header_h1 {
-      font-size: 62px;
-      line-height: 80px;
-      padding: 30px 0; }
-    header .header__title .header__title_col .header_paragraph {
-      font-size: 20px;
-      font-weight: 400;
-      padding: 20px 0; }
-
-main {
-  background-color: var(--background-blue); }
-  main .advice .advice__title .advice__title__h3 {
-    font-size: 16px;
-    color: var(--primary-background); }
-  main .advice .advice__title .advice__title__h2 {
-    font-size: 40px;
-    color: var(--base-white); }
-  main .advice .advice__title .advice__title__p {
-    font-size: 14px;
-    color: var(--base-white); }
-  main .advice .advice__cards__wrap .advice__card__item {
-    aspect-ratio: 1/1.5;
-    border-radius: 3px;
-    background-color: var(--base-white); }
-    main .advice .advice__cards__wrap .advice__card__item img {
-      width: 70px;
-      height: 76px;
-      border-radius: 10px; }
-    main .advice .advice__cards__wrap .advice__card__item .advice__card__item__h5 {
-      font-size: 16px;
-      font-weight: 700; }
-    main .advice .advice__cards__wrap .advice__card__item .advice__card__item__hr {
-      width: 35%;
-      border: 1px solid red; }
-  main .advice .advice__cards__wrap .advice__card__item_colored {
-    background-color: var(--primary-background); }
-    main .advice .advice__cards__wrap .advice__card__item_colored .advice__card__item__hr {
-      border: 1px solid var(--base-white); }
-  main .doctor .doctor__img {
-    width: 100%;
-    height: auto; }
-  main .doctor .doctor__div__hr {
-    border: 4px solid var(--primary-background);
-    width: 25%; }
-  main .doctor .doctor__h3 {
-    font-size: 50px;
-    color: var(--base-white);
-    font-weight: 700;
-    line-height: 50px; }
-  main .doctor .doctor__p {
-    font-size: 16px;
-    color: var(--base-white); }
-  main .doctor .doctor__link {
-    text-decoration: none;
-    color: var(--primary-background); }
-  main .courses .courses__title .courses__title__h3 {
-    font-size: 16px;
-    color: var(--primary-background); }
-  main .courses .courses__title .courses__title__h2 {
-    font-size: 40px;
-    color: var(--base-white); }
-  main .courses .courses__title .courses__title__p {
-    font-size: 14px;
-    color: var(--base-white); }
-  main .courses .courses__cards .card__item {
-    margin: 0 auto;
-    background-color: grey;
-    height: 626px;
-    aspect-ratio: 1/2.4; }
-    main .courses .courses__cards .card__item .t__side {
-      border: 1px solid red;
-      background-color: #c4c1b7;
-      height: 300px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 4fr 1fr; }
-      main .courses .courses__cards .card__item .t__side img {
-        width: 40px;
-        height: 40px; }
-      main .courses .courses__cards .card__item .t__side .discount {
-        background-color: #ebae8a;
-        grid-column: 1/3;
-        grid-row: 1/2;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center; }
-        main .courses .courses__cards .card__item .t__side .discount .sale {
-          color: white;
-          background-color: red;
-          border: 1px solid red;
-          border-radius: 4px;
-          padding: 3px 8px;
-          margin-left: -25px; }
-      main .courses .courses__cards .card__item .t__side .like {
-        background-color: #ebae8a;
-        grid-column: 2/3;
-        grid-row: 3/4; }
-      main .courses .courses__cards .card__item .t__side .basket {
-        background-color: #ebae8a;
-        grid-column: 3/4;
-        grid-row: 3/4; }
-      main .courses .courses__cards .card__item .t__side .watch {
-        background-color: #ebae8a;
-        grid-column: 4/5;
-        grid-row: 3/4; }
-    main .courses .courses__cards .card__item .b__side {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 0.5fr 0.5fr 2fr; }
-      main .courses .courses__cards .card__item .b__side .b__side__h5 {
-        grid-column: 1/2;
-        grid-row: 1/2; }
-      main .courses .courses__cards .card__item .b__side .b__side__h4 {
-        grid-column: 1/2;
-        grid-row: 2/3; }
-      main .courses .courses__cards .card__item .b__side .b__side__p {
-        grid-column: 1/2;
-        grid-row: 3/4; }
-      main .courses .courses__cards .card__item .b__side .b__side__span {
-        grid-column: 1/2;
-        grid-row: 4/5; }
-      main .courses .courses__cards .card__item .b__side .b__side__price {
-        grid-column: 1/2;
-        grid-row: 5/6; }
-      main .courses .courses__cards .card__item .b__side .b__side__btn {
-        grid-column: 1/2;
-        grid-row: 6/7; }
-
-@media screen and (max-width: 768px) {
-  .header .header__title .header__title_col {
-    font-weight: 500; }
-    .header .header__title .header__title_col .header_h3 {
-      font-size: 16px; }
-    .header .header__title .header__title_col .header_h1 {
-      font-size: 38px;
-      line-height: 40px;
-      padding: 5px 0; }
-    .header .header__title .header__title_col .header_paragraph {
-      font-size: 20px;
-      font-weight: 400;
-      padding: 10px 0; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/Users/mykola_hrytsenko/Desktop/study/Medical-Instant/style/style.scss:237
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...  .card__item_1\": expected \"{\", was \"}\"\A         on line 237 of /Users/mykola_hrytsenko/Desktop/study/Medical-Instant/style/style.scss\A \A 232:             grid-row: 6/7;\A 233:           }\A 234:         }\A 235:       }\A 236:       .card__item_1\A 237:     }\A 238:   }\A 239: }\A 240: \A 241: @media screen and (max-width: 768px) {\A 242:   .header .header__title .header__title_col {"; }
