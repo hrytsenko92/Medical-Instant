@@ -5,7 +5,8 @@
   --base-white: #ffffff;
   --sale: #e74040;
   --old-price-color: #bdbdbd;
-  --new-price-color: #2435a1; }
+  --new-price-color: #2435a1;
+  --disabled-color: #8ec2f2; }
 
 body {
   box-sizing: border-box;
@@ -190,7 +191,8 @@ main {
         main .courses .courses__cards .row .courses__cards_wrap .card__item .b__side .b__side__p {
           grid-column: 1/2;
           grid-row: 3/4;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          color: var(--old-price-color); }
         main .courses .courses__cards .row .courses__cards_wrap .card__item .b__side .b__side__sales-wrap {
           grid-column: 1/2;
           grid-row: 4/5;
@@ -247,6 +249,97 @@ main {
       background-image: url("../img/courses_card_4.png");
       background-repeat: no-repeat;
       background-size: cover; }
+  main .pricing .pricing__title .pricing__title__h3 {
+    font-size: 16px;
+    color: var(--primary-background); }
+  main .pricing .pricing__title .pricing__title__h2 {
+    font-size: 40px;
+    color: var(--base-white); }
+  main .pricing .pricing__title .pricing__title__p {
+    font-size: 14px;
+    color: var(--base-white); }
+  main .pricing .pricing__cards .pricing-card-wrap {
+    background-color: var(--base-white);
+    border: 1px solid red;
+    position: relative;
+    width: 330px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr 0.5fr 0.7fr 0.5fr 0.7fr 3fr;
+    justify-content: center;
+    align-items: center; }
+    main .pricing .pricing__cards .pricing-card-wrap .logo {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+      main .pricing .pricing__cards .pricing-card-wrap .logo .pricing__logo_img {
+        width: 96px;
+        height: 96px;
+        object-position: center;
+        object-fit: cover; }
+    main .pricing .pricing__cards .pricing-card-wrap .free {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700; }
+    main .pricing .pricing__cards .pricing-card-wrap .first-text {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      font-size: 14px; }
+    main .pricing .pricing__cards .pricing-card-wrap .price {
+      grid-column: 1/2;
+      grid-row: 4/5; }
+      main .pricing .pricing__cards .pricing-card-wrap .price .price_num {
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--sale);
+        margin-bottom: 0; }
+      main .pricing .pricing__cards .pricing-card-wrap .price .mounth {
+        font-size: 14px;
+        color: var(--disabled-color); }
+    main .pricing .pricing__cards .pricing-card-wrap .second-text {
+      grid-column: 1/2;
+      grid-row: 5/6; }
+    main .pricing .pricing__cards .pricing-card-wrap .pricing-button {
+      grid-column: 1/2;
+      grid-row: 6/7;
+      width: 240px;
+      height: 50px;
+      border-radius: 7px;
+      border: 1px solid var(--sale);
+      background-color: var(--sale);
+      box-shadow: none;
+      color: var(--base-white);
+      font-weight: 500; }
+    main .pricing .pricing__cards .pricing-card-wrap .pricing-ul {
+      grid-column: 1/2;
+      grid-row: 7/8;
+      list-style: none; }
+      main .pricing .pricing__cards .pricing-card-wrap .pricing-ul li {
+        margin: 15px 0;
+        padding: 5px 30px;
+        position: relative; }
+      main .pricing .pricing__cards .pricing-card-wrap .pricing-ul .green-tips::before {
+        content: "";
+        position: absolute;
+        margin-left: -35px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/green-done.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+      main .pricing .pricing__cards .pricing-card-wrap .pricing-ul .grey-tips::before {
+        content: "";
+        position: absolute;
+        margin-left: -35px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/grey-done.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
 
 @media screen and (max-width: 768px) {
   .header .header__title .header__title_col {
