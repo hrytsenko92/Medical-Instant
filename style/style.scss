@@ -448,6 +448,65 @@ main {
       }
     }
   }
+  .experts {
+    .experts__title {
+      .experts__title__h3 {
+        font-size: 16px;
+        color: var(--primary-background);
+      }
+      .experts__title__h2 {
+        font-size: 40px;
+        color: var(--base-white);
+      }
+      .experts__title__p {
+        font-size: 14px;
+        color: var(--base-white);
+      }
+    }
+    .expert__card__wrap {
+      width: 450px;
+      background-color: var(--base-white);
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px;
+      .expert__card__p {
+        text-align: center;
+      }
+      .expert__card__img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        padding: 10px;
+      }
+      .stars {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+        margin: 0 auto;
+        padding: 10px;
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .expert__card__name {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px;
+      }
+      .expert__card__role {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--old-price-color);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
