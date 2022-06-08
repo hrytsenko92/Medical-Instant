@@ -4,6 +4,9 @@
   --background-blue: #26335d;
   --primary-background: #ff6551;
   --base-white: #ffffff;
+  --sale: #e74040;
+  --old-price-color: #bdbdbd;
+  --new-price-color: #2435a1;
 }
 body {
   box-sizing: border-box;
@@ -155,16 +158,16 @@ main {
     .courses__cards {
       .row {
         .courses__cards_wrap {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
           .card__item {
-            margin: 0 auto; //delete
-            background-color: grey;
-            // width: 240px;
-            height: 626px;
+            background-color: var(--base-white);
+            height: 630px;
             aspect-ratio: 1/2.4;
             .t__side {
-              border: 1px solid red;
-              background-color: #c4c1b7;
-              height: 300px;
+              height: 330px;
               img {
                 width: 40px;
                 height: 40px;
@@ -172,8 +175,8 @@ main {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
               grid-template-rows: 1fr 4fr 1fr;
+              justify-items: center;
               .discount {
-                background-color: #ebae8a;
                 grid-column: 1/3;
                 grid-row: 1/2;
                 display: flex;
@@ -181,26 +184,23 @@ main {
                 justify-content: center;
                 align-items: center;
                 .sale {
-                  color: white; // var
-                  background-color: red; //var
-                  border: 1px solid red; //var
+                  color: var(--base-white);
+                  background-color: var(--sale);
+                  border: 1px solid var(--sale);
                   border-radius: 4px;
                   padding: 3px 8px;
                   margin-left: -25px;
                 }
               }
               .like {
-                background-color: #ebae8a; //delete
                 grid-column: 2/3;
                 grid-row: 3/4;
               }
               .basket {
-                background-color: #ebae8a; //delete
                 grid-column: 3/4;
                 grid-row: 3/4;
               }
               .watch {
-                background-color: #ebae8a; //delete
                 grid-column: 4/5;
                 grid-row: 3/4;
               }
@@ -208,52 +208,126 @@ main {
             .b__side {
               display: grid;
               grid-template-columns: 1fr;
-              grid-template-rows: 1fr 1fr 1fr 0.5fr 0.5fr 2fr;
-              .b__side__h5 {
+              grid-template-rows: 0.7fr 1.3fr 0.7fr 0.7fr 0.7fr 1fr;
+              justify-content: start;
+              align-items: center;
+              padding: 15px 7px;
+              .b__side__h5_wrap {
                 grid-column: 1/2;
                 grid-row: 1/2;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                .b__side__h5 {
+                  font-size: 15px;
+                  color: var(--primary-background);
+                }
+                .b__side__star-wrap {
+                  display: flex;
+                  flex-flow: row nowrap;
+                  align-items: center;
+                  background-color: var(--background-blue);
+                  padding: 5px 10px;
+                  border-radius: 55%;
+                  color: var(--base-white);
+                  .b__side__h5_img {
+                    width: 16px;
+                    height: 16px;
+                    object-position: center;
+                    object-fit: cover;
+                  }
+                }
               }
               .b__side__h4 {
                 grid-column: 1/2;
                 grid-row: 2/3;
+                font-size: 18px;
+                font-weight: 700;
               }
               .b__side__p {
                 grid-column: 1/2;
                 grid-row: 3/4;
+                margin-bottom: 0;
               }
-              .b__side__span {
+              .b__side__sales-wrap {
                 grid-column: 1/2;
                 grid-row: 4/5;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: start;
+                align-items: center;
+                .b__side__sales_img {
+                  width: 16px;
+                  height: 16px;
+                  object-fit: cover;
+                  object-position: center;
+                }
+                .b__side__span {
+                  padding-left: 5px;
+                }
               }
               .b__side__price {
                 grid-column: 1/2;
                 grid-row: 5/6;
+                .old {
+                  color: var(--old-price-color);
+                }
+                .new {
+                  color: var(--new-price-color);
+                }
+                margin-bottom: 0;
               }
               .b__side__btn {
                 grid-column: 1/2;
                 grid-row: 6/7;
+                justify-self: center;
+                align-self: end;
+                width: 144px;
+                height: 44px;
+                border-radius: 35px;
+                border: 2px solid var(--primary-background);
+                box-shadow: none;
+                background-color: var(--base-white);
+                color: var(--primary-background);
+                .b__side__btn-arw {
+                  padding-left: 8px;
+                }
               }
             }
           }
-
-          // .card__item {
-          //   .t__side {
-          //     .like {
-          //     }
-          //     .basket {
-          //     }
-          //     .watch {
-          //     }
-          //   }
-          // }
-          // .card__item_1 {
-          //   .t__side {
-          //     background-image: url("img/courses_card_1.png");
-          //     width: 100%;
-          //     height: auto;
-          //     background-color: #ff6551;
-          //   }
-          // }
+          .card__item_1 {
+            .t__side {
+              width: 100%;
+              background-image: url("../img/courses_card_1.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+          .card__item_2 {
+            .t__side {
+              width: 100%;
+              background-image: url("../img/courses_card_2.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+          .card__item_3 {
+            .t__side {
+              width: 100%;
+              background-image: url("../img/courses_card_3.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+          .card__item_4 {
+            .t__side {
+              width: 100%;
+              background-image: url("../img/courses_card_4.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
         }
       }
     }
