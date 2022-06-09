@@ -260,7 +260,6 @@ main {
     color: var(--base-white); }
   main .pricing .pricing__cards .pricing-card-wrap {
     background-color: var(--base-white);
-    border: 1px solid red;
     position: relative;
     width: 330px;
     padding: 30px;
@@ -350,7 +349,6 @@ main {
     font-size: 14px;
     color: var(--base-white); }
   main .experts .expert__card__wrap {
-    width: 450px;
     background-color: var(--base-white);
     display: flex;
     flex-flow: column nowrap;
@@ -385,6 +383,71 @@ main {
       font-size: 14px;
       font-weight: 700;
       color: var(--old-price-color); }
+  main .newsletter .newsletter__title .newsletter__title__h3 {
+    font-size: 16px;
+    color: var(--primary-background); }
+  main .newsletter .newsletter__title .newsletter__title__h2 {
+    font-size: 40px;
+    color: var(--base-white); }
+  main .newsletter .newsletter__title .newsletter__title__p {
+    font-size: 14px;
+    color: var(--base-white); }
+  main .newsletter .newsletter__title .newsletter-form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: var(--base-white);
+    border-radius: 10px; }
+    main .newsletter .newsletter__title .newsletter-form .form-input {
+      box-shadow: none;
+      border: none; }
+  main .navigation .navigation-wrap .navigation_ul_wrap ul {
+    list-style: none;
+    position: relative;
+    color: var(--base-white); }
+    main .navigation .navigation-wrap .navigation_ul_wrap ul li {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 5px; }
+    main .navigation .navigation-wrap .navigation_ul_wrap ul .navigation__phone,
+    main .navigation .navigation-wrap .navigation_ul_wrap ul .navigation__place,
+    main .navigation .navigation-wrap .navigation_ul_wrap ul .navigation__mail {
+      margin-left: 30px; }
+    main .navigation .navigation-wrap .navigation_ul_wrap ul .navigation__phone::before {
+      content: " ";
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      margin-left: -30px;
+      background-image: url("../img/phone.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    main .navigation .navigation-wrap .navigation_ul_wrap ul .navigation__place::before {
+      content: " ";
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      margin-left: -30px;
+      background-image: url("../img/place.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    main .navigation .navigation-wrap .navigation_ul_wrap ul .navigation__mail::before {
+      content: " ";
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      margin-left: -30px;
+      background-image: url("../img/letter.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
+  main .navigation .navigation-wrap .navigation_ul_wrap ul:first-child {
+    font-size: 26px;
+    font-weight: 700; }
 
 @media screen and (max-width: 768px) {
   .header .header__title .header__title_col {
