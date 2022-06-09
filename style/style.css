@@ -449,6 +449,14 @@ main {
     font-size: 26px;
     font-weight: 700; }
 
+footer .footer-container .rights {
+  color: var(--old-price-color); }
+footer .footer-container .socials img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  object-position: center; }
+
 @media screen and (max-width: 768px) {
   .header .header__title .header__title_col {
     font-weight: 500; }
