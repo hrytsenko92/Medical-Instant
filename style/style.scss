@@ -26,6 +26,9 @@ header {
   background-size: cover;
   .header__navbar {
     height: 15%;
+    .navbar-brand {
+      font-weight: 700;
+    }
     .navbar-toggler:focus {
       box-shadow: none;
     }
@@ -44,6 +47,12 @@ header {
     }
     button.navbar-toggler {
       border: 1px solid white;
+    }
+    .nav-item__img {
+      width: 12px;
+      height: 10px;
+      object-fit: cover;
+      object-position: center;
     }
   }
   .header__title {
@@ -64,11 +73,13 @@ header {
         font-size: 62px;
         line-height: 80px;
         padding: 30px 0;
+        width: 80%;
       }
       .header_paragraph {
         font-size: 20px;
         font-weight: 400;
         padding: 20px 0;
+        width: 70%;
       }
     }
   }
@@ -255,10 +266,12 @@ main {
               .b__side__sales-wrap {
                 grid-column: 1/2;
                 grid-row: 4/5;
+                justify-self: center;
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: start;
                 align-items: center;
+                font-weight: 500;
                 .b__side__sales_img {
                   width: 16px;
                   height: 16px;
@@ -272,6 +285,7 @@ main {
               .b__side__price {
                 grid-column: 1/2;
                 grid-row: 5/6;
+                justify-self: center;
                 .old {
                   color: var(--old-price-color);
                 }

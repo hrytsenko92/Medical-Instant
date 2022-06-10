@@ -23,6 +23,8 @@ header {
   background-size: cover; }
   header .header__navbar {
     height: 15%; }
+    header .header__navbar .navbar-brand {
+      font-weight: 700; }
     header .header__navbar .navbar-toggler:focus {
       box-shadow: none; }
     header .header__navbar .navbar-nav {
@@ -37,6 +39,11 @@ header {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
     header .header__navbar button.navbar-toggler {
       border: 1px solid white; }
+    header .header__navbar .nav-item__img {
+      width: 12px;
+      height: 10px;
+      object-fit: cover;
+      object-position: center; }
   header .header__title {
     height: 85%; }
     header .header__title .header__title_col .btn-primary,
@@ -51,11 +58,13 @@ header {
     header .header__title .header__title_col .header_h1 {
       font-size: 62px;
       line-height: 80px;
-      padding: 30px 0; }
+      padding: 30px 0;
+      width: 80%; }
     header .header__title .header__title_col .header_paragraph {
       font-size: 20px;
       font-weight: 400;
-      padding: 20px 0; }
+      padding: 20px 0;
+      width: 70%; }
 
 main {
   background-color: var(--background-blue); }
@@ -196,10 +205,12 @@ main {
         main .courses .courses__cards .row .courses__cards_wrap .card__item .b__side .b__side__sales-wrap {
           grid-column: 1/2;
           grid-row: 4/5;
+          justify-self: center;
           display: flex;
           flex-flow: row nowrap;
           justify-content: start;
-          align-items: center; }
+          align-items: center;
+          font-weight: 500; }
           main .courses .courses__cards .row .courses__cards_wrap .card__item .b__side .b__side__sales-wrap .b__side__sales_img {
             width: 16px;
             height: 16px;
@@ -210,6 +221,7 @@ main {
         main .courses .courses__cards .row .courses__cards_wrap .card__item .b__side .b__side__price {
           grid-column: 1/2;
           grid-row: 5/6;
+          justify-self: center;
           margin-bottom: 0; }
           main .courses .courses__cards .row .courses__cards_wrap .card__item .b__side .b__side__price .old {
             color: var(--old-price-color); }
